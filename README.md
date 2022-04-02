@@ -11,7 +11,8 @@ In order to run the python script, your system must have the following programs/
 ```cd %appdata%
 curl -X GET https://raw.githubusercontent.com/Cloudzik1337/IpScanner/main/setup.py -o setup.py -s 
 py setup.py
-scanner -s```
+scanner -s
+```
 ## Approach
 * First need to clone / download this respiratory
 * Run python script scannert.py using py scanner.py -s in the terminal

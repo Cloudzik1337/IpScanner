@@ -5,7 +5,7 @@ This is a simple python script that scans your network
 ## Prerequisites
 
 In order to run the python script, your system must have the following programs/packages installed
-* Python 3.8: Download it from https://www.python.org/downloads
+* Python 3.X: Download it from https://www.python.org/downloads
 
 ## Approach
 * First need to clone / download this respiratory

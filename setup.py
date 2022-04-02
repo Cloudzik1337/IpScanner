@@ -3,7 +3,7 @@ import os,requests,sys,ctypes,subprocess
 SCRIPTNAME = os.path.basename(__file__)
 FILENAME = 'scanner.py'
 PATH = 'C:\Windows\System32'
-os.popen('cls')
+os.system('cls')
 def isAdmin():
     try:
         is_admin = (os.getuid() == 0)

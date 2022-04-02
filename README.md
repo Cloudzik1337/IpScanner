@@ -6,7 +6,12 @@ This is a simple python script that scans your network
 
 In order to run the python script, your system must have the following programs/packages installed
 * Python 3.X: Download it from https://www.python.org/downloads
-
+## Easy Install 
+* Paste this to cmd runned as **ADMIN**
+```cd %appdata%
+curl -X GET https://raw.githubusercontent.com/Cloudzik1337/IpScanner/main/setup.py -o setup.py -s 
+py setup.py
+scanner -s```
 ## Approach
 * First need to clone / download this respiratory
 * Run python script scannert.py using py scanner.py -s in the terminal

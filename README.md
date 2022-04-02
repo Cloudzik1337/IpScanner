@@ -46,6 +46,12 @@ init(autoreset=True)
 detected = []
 choice = 0
 ports = itertools.cycle(range(1,65535))
+def GetLocalIp():
+    ip = socket.gethostbyname(socket.gethostname()).split('.')[:3]
+    NewIp = ''
+    for part in ip:
+        NewIp += part + '.'
+    return NewIp
 def main():
     s_print_lock = threading.Lock()
     def s_print(*a, **b):
@@ -56,7 +62,7 @@ def main():
     def checker():
         global choice, detected
         end = next(ips)
-        ip = f'192.168.50.{end}'
+        ip = GetLocalIp()+str(end)
         ping = os.popen(f'ping {ip} -w 10')
         if 'Reply from' in ping.read():
             

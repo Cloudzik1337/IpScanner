@@ -9,7 +9,7 @@ In order to run the python script, your system must have the following programs/
 
 ## Approach
 * First need to clone / download this respiratory
-* Run python script scannert.py using py script.py in the terminal
+* Run python script scannert.py using py scanner.py -s in the terminal
 * Drag script to C:\Windows\System32 With admin priviliges
 * Run CMD and type `scanner -s` or `scanner -scan`
 ## Previev 

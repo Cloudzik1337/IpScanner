@@ -13,7 +13,7 @@ In order to run the python script, your system must have the following programs/
 * Drag script to C:\Windows\System32 With admin priviliges
 * Run CMD and type `scanner -s` or `scanner -scan`
 ## Previev 
-<img src="Images/Previev.png">
+<img src="Images/PrevievScan.png">
 
 ## Code
 ```

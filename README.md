@@ -12,6 +12,8 @@ In order to run the python script, your system must have the following programs/
 * Run python script scannert.py using py script.py in the terminal
 * Drag script to C:\Windows\System32 With admin priviliges
 * Run CMD and type `scanner -s` or `scanner -scan`
+## Previev 
+<img src="Images/Previev.png">
 
 ## Code
 ```

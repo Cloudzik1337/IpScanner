@@ -1,7 +1,7 @@
 # Python Network Scanner
 
 This is a simple python script that scans your network
-*!Not checked on linux!
+* !Not checked on linux!*
 ## Prerequisites
 
 In order to run the python script, your system must have the following programs/packages installed

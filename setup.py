@@ -29,4 +29,4 @@ print('[+] Moving {} to {}'.format(FILENAME, PATH))
 os.popen('move {} {}'.format(FILENAME, PATH))
 if os.path.exists('scanner.py'):
     print('\u001b[42m[+] Installed Succesyfully.\u001b[0m')
-    print('[+] Now you can use scanner -s')
+    print('[+] Now you can use scanner --s')

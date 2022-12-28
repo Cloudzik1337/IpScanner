@@ -1,8 +1,6 @@
 # /usr/bin/env python3
 import sys
-from time import sleep
-import requests
-import threading
+
 from colorama import Fore, init
 import argparse
 import time
@@ -47,16 +45,28 @@ def main():
         ping = os.popen(f'ping {ip} -w 10')
         if 'Reply from' in ping.read():
             
-            name = os.popen(f'nslookup {ip}').readlines()[3].strip('Name:    ').strip('\n')
+
+
+            try:
+                name1 = os.popen(f'nslookup {ip}').read()
+                name = list(name1.split('\n'))[3].split('    ')[1]
+            except:
+
+                name = 'Unknown'
+
+
             choice += 1
             detected.append(ip)
-            s_print(f'{choice}   {Fore.RED + ip + Fore.RESET}     {Fore.CYAN + name + Fore.RESET}  ')
+            s_print(f'{choice}   {Fore.RED + ip + Fore.RESET}     {Fore.CYAN + str(name) + Fore.RESET}  ')
         else:
             pass
-        
-    for i in range(253):
-        th = threading.Thread(target=checker).start()
+
     print('|        IP       |        NAME        |')
+    for i in range(253):
+        th = threading.Thread(target=checker)
+        th.daemon = True
+        th.start()
+
 
 
     
@@ -95,4 +105,6 @@ args = parser.parse_args()
 if args.s:
     main()
 else:
+
     print(Fore.RED + '[-] Bad usage type scanner -h for more info\nor visit https://github.com/Cloudzik1337/IpScanner')
+    main()
